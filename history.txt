@@ -1,0 +1,167 @@
+
+  204  pwd
+  205  ls
+  206  man ls
+  207  pwd
+  208  ls
+  209  q
+  210  man
+  211  pwd
+  212  help
+  213  help pwd
+  214  man
+  215  help
+  216  man
+  217  ls *.txt
+  218  ls *-realmichael.txt
+  219  ls -1
+  220  ls -1h
+  221  cd
+  222  cd desktop 
+  223  pwd
+  224  ls
+  225  cd ..
+  226  cd --
+  227  cd ..
+  228  cd documents 
+  229  open .
+  230  mkdir ProgHist-Text2
+  231  mkdir PrrogHist-Text
+  232  cd..
+  233  cd ..
+  234  cd ProgHist-Text
+  235  pwd
+  236  ls
+  237  open documents
+  238  pwd
+  239  ls
+  240  man ls
+  241  pwd
+  242  ls
+  243  man ls
+  244  ls *.txt
+  245  ls -1
+  246  ls -1h
+  247  cd 
+  248  cd desktop 
+  249  cd ..
+  250  open .
+  251  cd desktop 
+  252  mkdir PrrogHist-text
+  253  cd PrrogHist-text
+  254  ls -lh
+  255  open 2600-0.txt
+  256  cd desktop
+  257  cd ..
+  258  cd PrrogHist-text
+  259  open 2600-0.txt
+  260  cat 2600-0.txt
+  261  head 2600-0.txt
+  262  tail 2600-0.txt
+  263  head -20 2600-0.txt
+  264  mv 2600-0.txt tolstoy.txt
+  265  ls
+  266  cp 2600-0.txt tolstoy.txt
+  267  ls
+  268  cp 2600-0.txt tolstoy.txt
+  269  cp 2600-0.txt tolstoy.txt
+  270  cp 2600-0.txt 
+  271  ls
+  272  cat cat tolstoy.txt tolstoy2.txt
+  273  cat tolstoy.txt tolstoy2.txt > tolstoy-twice.txt.
+  274  ls
+  275  cat *.txt > everything-together.txt
+  276  ls
+  277  vim tolstoy.txt
+  278  cp tolstoy.txt tolstoy-backup.txt
+  279  ls
+  280  cd .. 
+  281  mkdir proghist-dest
+  282  cp /users/michaelschoenberg/desktop/PrrogHist-text/tolstoy.txt/users/michaelschoenberg/desktop/proghist-dest/
+  283  cd proghist-text
+  284  cd PrrogHist-text
+  285  rm tolstoy.txt
+  286  ls
+  287  history
+  288  history  > history.txt
+  289  history 286
+  290  history
+  291  history head
+  292  history 500
+
+
+Trouble with Username and password below:
+
+
+michaelschoenberg@Michaels-Air-2 PrrogHist-text % history 1 ls -lh
+fc: too many arguments
+michaelschoenberg@Michaels-Air-2 PrrogHist-text % cd ..
+michaelschoenberg@Michaels-Air-2 desktop % cd PrrogHist-text
+michaelschoenberg@Michaels-Air-2 PrrogHist-text % ls -lh
+total 39408
+-rw-r--r--  1 michaelschoenberg  staff   6.4M Oct 24 23:44 everything-together.txt
+-rw-r--r--@ 1 michaelschoenberg  staff   1.7K Oct 25 00:15 history.txt
+-rw-r--r--  1 michaelschoenberg  staff   217B Oct 25 00:16 indexxx.html
+-rw-r--r--@ 1 michaelschoenberg  staff   3.2M Oct 24 23:48 tolstoy-backup.txt
+-rw-r--r--  1 michaelschoenberg  staff   6.4M Oct 24 23:43 tolstoy-twice.txt.
+-rw-r--r--@ 1 michaelschoenberg  staff   3.2M Oct 24 23:34 tolstoy2.txt
+michaelschoenberg@Michaels-Air-2 PrrogHist-text % git init
+Initialized empty Git repository in /Users/michaelschoenberg/Desktop/PrrogHist-text/.git/
+michaelschoenberg@Michaels-Air-2 PrrogHist-text % git add .
+michaelschoenberg@Michaels-Air-2 PrrogHist-text % git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   .DS_Store
+	new file:   everything-together.txt
+	new file:   history.txt
+	new file:   indexxx.html
+	new file:   tolstoy-backup.txt
+	new file:   tolstoy-twice.txt.
+	new file:   tolstoy2.txt
+
+michaelschoenberg@Michaels-Air-2 PrrogHist-text % git commit -m "this is a message"
+[main (root-commit) 5b0d8e7] this is a message
+ Committer: Michael Schoenberg <michaelschoenberg@Michaels-Air-2.ad.wlu.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 7 files changed, 396319 insertions(+)
+ create mode 100644 .DS_Store
+ create mode 100644 everything-together.txt
+ create mode 100644 history.txt
+ create mode 100644 indexxx.html
+ create mode 100644 tolstoy-backup.txt
+ create mode 100644 tolstoy-twice.txt.
+ create mode 100644 tolstoy2.txt
+michaelschoenberg@Michaels-Air-2 PrrogHist-text % git remote add origin https://github.com/mschoenberg1210/PrrogHist-text.git
+michaelschoenberg@Michaels-Air-2 PrrogHist-text % git remote -v
+origin	https://github.com/mschoenberg1210/PrrogHist-text.git (fetch)
+origin	https://github.com/mschoenberg1210/PrrogHist-text.git (push)
+michaelschoenberg@Michaels-Air-2 PrrogHist-text % git branch -M main
+michaelschoenberg@Michaels-Air-2 PrrogHist-text % git push -u origin master 
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/mschoenberg1210/PrrogHist-text.git'
+michaelschoenberg@Michaels-Air-2 PrrogHist-text % git push -u origin main
+Username for 'https://github.com': mschoenberg1210
+Password for 'https://mschoenberg1210@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/mschoenberg1210/PrrogHist-text.git/'
+michaelschoenberg@Michaels-Air-2 PrrogHist-text % git push -u origin main
+Username for 'https://github.com': mschoenberg1210
+Password for 'https://mschoenberg1210@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/mschoenberg1210/PrrogHist-text.git/'
+michaelschoenberg@Michaels-Air-2 PrrogHist-text %
